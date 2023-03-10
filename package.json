@@ -1,0 +1,23 @@
+{
+  "name": "sayakaya-technical-test",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "author": "nofaldi",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start:dev": "ts-node -r tsconfig-paths/register src/index.ts",
+    "start:prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/register dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.0",
+    "prisma": "^4.11.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.2",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "dotenv": "^16.0.3"
+  }
+}
