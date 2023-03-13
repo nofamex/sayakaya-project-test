@@ -5,8 +5,12 @@ import { Users } from "@prisma/client";
 import { mail } from "@/modules/mailer";
 import { generatePromo } from "@/modules/promo";
 import moment from "moment";
+import { app } from "@/modules/rest";
 
 dotenv.config();
+
+// Initiate rest api server
+app.listen(process.env.PORT || 5000, () => console.log("server running..."));
 
 /**
  * * Cron will start every 00:00 am every single day.

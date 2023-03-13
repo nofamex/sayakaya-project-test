@@ -24,7 +24,6 @@ Assuming there will be a lot of user in the system, user birthday will be indexe
 - Typescript
 - Prisma
 - PosgtreSQL
-- Docker
 - Express
 
 This repository also include a REST API to check created promo for user and explore scheduler log.
@@ -35,12 +34,6 @@ copy example environment (default for docker build):
 
 ```bash
 cp env.example env
-```
-
-run using docker:
-
-```bash
-docker-compose up
 ```
 
 run using yarn:
