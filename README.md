@@ -15,7 +15,7 @@ The task scheduler will run at 00:00 am everyday. If there is no user with the b
 
 ## Table Design
 
-<iframe width="560" height="315" src='https://dbdiagram.io/embed/640dfa15296d97641d874a48'> </iframe>
+![Database](/assets/database.png "Database")
 
 Assuming there will be a lot of user in the system, user birthday will be indexed so the scheduler query can run faster. To limit the promos usage for specific user and date, the promos table will hold the maximum date the promos can be use (end of the same day at 23:59) and store the corresponding user with its id. The log table is for storing log message of event and can be replaced with real logging server (kibana, prometheus, etc).
 
